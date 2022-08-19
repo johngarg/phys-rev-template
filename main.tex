@@ -1,0 +1,68 @@
+\documentclass[
+reprint,    % Can use preprint too
+nofootinbib % Move footnotes from refs
+aps,
+prd,
+amsmath,
+amssymb,
+]{revtex4-2}
+
+% Recommended by APS
+\usepackage{graphicx} % Include figure files
+\usepackage{dcolumn}  % Align table columns on decimal point
+\usepackage{bm}       % Bold math
+
+% Our packages
+\usepackage[
+colorlinks=true,
+citecolor=blue
+]{hyperref}
+\usepackage{lipsum}
+\usepackage{hepunits}
+
+\graphicspath{{img/}} % Set images path
+
+\setlist[description]{font=\normalfont\space}
+
+\begin{document}
+
+\title{Your title here}
+
+\date{\today}
+
+\author{John Gargalionis}
+\email{johngarg@ific.uv.es}
+\affiliation{Departamento de F\'isica Te\'orica and IFIC, Universidad de
+  Valencia-CSIC, C/Catedr\'atico Jos\'e Beltr\'an, 2, E-46980 Paterna, Spain}
+
+% Style:
+% - https://journals.aps.org/prl/authors/editorial-policies-practices
+% - https://cdn.journals.aps.org/files/styleguide-pr.pdf
+
+% Length of letter is constrained to 3750 words
+% PRL wants < 600 characters for the abstract!
+% PRD wants < 500 words
+\begin{abstract}
+  \lipsum[1]
+\end{abstract}
+
+\maketitle
+
+\section*{Introduction}
+Weinberg invented all of physics~\cite{Weinberg:1967tq}. \lipsum[2-5]
+
+\section*{Analysis}
+\lipsum[6-10]
+
+\section*{Conclusions}
+\lipsum[11]
+
+\section*{Acknowledgements}
+
+We thank $X$, $Y$ and $Z$ for comments on the manuscript. Feynman diagrams were
+generated using the Ti\textit{k}Z-Feynman package for
+\LaTeX~\cite{Ellis:2016jkw}.
+
+\bibliography{main}
+
+\end{document}
