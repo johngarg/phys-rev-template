@@ -1,4 +1,4 @@
-COMPILER = latexmk -pdf -pdflatex="pdflatex -interactive=nonstopmode" -use-make $<
+COMPILER = latexmk -pdf -pdflatex="pdflatex -interaction=nonstopmode" -use-make
 PROJNAME = main
 TIKZ = tikz
 RM = rm -f *.nav *.snm *.fls *.log *.fdb_latexmk *.aux *.synctex.gz *.vrb *.bbl *Notes.bib
